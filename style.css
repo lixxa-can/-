@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #faf8f5;
+}
+
+h1 {
+    color: #5a5a5a;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tabs {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #c4b5a0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.tab-button:hover {
+    background-color: #b8a892;
+}
+
+.tab-button.active {
+    background-color: #9d8b75;
+}
+
+.startup-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.startup-card {
+    background-color: white;
+    border: 1px solid #e8e3dc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.startup-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.startup-card h3 {
+    color: #8b7a6b;
+    margin-top: 0;
+}
+
+.startup-link {
+    color: #8b7a6b;
+    text-decoration: none;
+}
+
+.startup-link:hover {
+    color: #6b5a4b;
+    text-decoration: underline;
+}
+
+.startup-card p {
+    color: #6b6b6b;
+    line-height: 1.5;
+}
+
+.favorite-btn {
+    background-color: #d4c4b0;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.favorite-btn:hover {
+    background-color: #c9b8a3;
+}
+
+.favorite-btn.added {
+    background-color: #a8b8a0;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.empty-message {
+    text-align: center;
+    color: #999;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.search-box {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    padding: 10px 15px;
+    width: 300px;
+    max-width: 90%;
+    border: 1px solid #e8e3dc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #c4b5a0;
+}
+
+.no-results {
+    text-align: center;
+    color: #999;
+    font-size: 18px;
+    padding: 40px;
+}
+
+#favoritesCount {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.analysis-section {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #e8e3dc;
+}
+
+.analysis-section label {
+    display: block;
+    margin-bottom: 8px;
+    color: #8b7a6b;
+    font-size: 14px;
+}
+
+.note-textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 8px;
+    border: 1px solid #e8e3dc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.note-textarea:focus {
+    outline: none;
+    border-color: #c4b5a0;
+}
+
+.buttons-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.buttons-row .save-note-btn {
+    background-color: #a8b8a0;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    flex: 1;
+}
+
+.buttons-row .save-note-btn:hover {
+    background-color: #98a890;
+}
+
+.buttons-row .favorite-btn {
+    flex: 1;
+    margin-top: 0;
+}
+
+.favorite-card {
+    width: 350px;
+}
+
+@media (max-width: 768px) {
+    .startup-card {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .favorite-card {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .tab-button {
+        padding: 8px 15px;
+        font-size: 14px;
+        margin: 5px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+}
